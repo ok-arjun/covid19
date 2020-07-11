@@ -73,23 +73,23 @@ $.getJSON("https://api.covid19india.org/state_district_wise.json", function (dat
 	  console.log(died);
 		for(var i = 0; i<city.length; i++){
 		
-		$('#dist').append("<td>"+city[i]+"</td>+<br>");
+		$('#dist').append("<tr><td>"+city[i]+"</td></tr>"+<br>");
 		}
 		for(var j = 0; j<con.length; j++){
 		
-			$('#conf').append("<td>"+con[j]+"</td><br>");
+			$('#conf').append("<tr><td>"+con[j]+"</td></tr>"+<br>");
 			}
 		for(var k = 0; k<rec.length; k++){
 		
-		$('#recov').append(rec[k]+"<br>");
+		$('#recov').append("<tr><td>"+rec[k]+"</td></tr>"+"<br>");
 		}	
 		for(var l = 0; l<act.length; l++){
 		
-			$('#actv').append("<td>"+act[l]+"</td><br>");
+			$('#actv').append("<tr><td>"+act[l]+"</tr></td>"+<br>");
 			}
 		for(var m = 0; m<died.length; m++){
 		
-			$('#death').append("<td>"+died[m]+"</td><br>");
+			$('#death').append("<tr><td>"+died[m]+"</td></tr>"+"<br>");
 			}	
    });
 //tester function js
