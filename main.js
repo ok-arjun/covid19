@@ -48,40 +48,7 @@ $(document).ready(function () {
       confirmed.shift();
       recovered.shift();
       deaths.shift();
-  
-  
-      // Chart initialization
-    var myChart = document.getElementById("myChart").getContext("2d");
-    var chart = new Chart(myChart, {
-      type: "line",
-      data: {
-        labels: states,
-        datasets: [
-          
-          {
-            label: "Deceased",
-            data: deaths,
-            backgroundColor: "#e74c3c",
-            minBarLength: 100,
-          },
-          {
-            label: "Recovered",
-            data: recovered,
-            backgroundColor: "#2ecc71",
-            minBarLength: 100,
-          },
-          {
-            label: "Confirmed Cases",
-            data: confirmed,
-            backgroundColor: "#f1c40f",
-            minBarLength: 100,
-          },
-          
-        ],
-      },
-      option: {},
-    });
-   
+ 
   });
 
 });
